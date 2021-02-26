@@ -19,13 +19,13 @@ You need a license to use this software as part of your application (YOUR APPLIC
 
 If YOUR APPLICATION is licensed under an MIT, APACHE, or other similar permissive FOSS license, you cannot use this software.
 
-If YOUR APPLICATION has reserved copyrights and is intended for commercial use, you then have to buy a license from us in order to use this software as part of YOUR APPLICATION. The payment of this license can be postponed for a maximum period of 4 years and the price to pay will depend on who long you decide to postpone it.
+If YOUR APPLICATION has reserved copyrights and is intended for commercial use, you then have to buy a license from us in order to use this software as part of YOUR APPLICATION. The payment of this license can be postponed for a maximum period of 4 years and the price to pay will depend on how long you decide to postpone it.
 
 You can install and test this software as part of YOUR APPLICATION for a period of 1 month, after which time you MUST register its use on the smart contract (see below) if you want to continue using the software.
 
 To register YOUR APPLICATION you shall calling the method `register(bytes32 packageHash,bytes32 organizationHash)` of the `licensing.uprtcl.eth` smart contract, where `packageHash` should be the sha256 hash of the name of the node package of YOUR APPLICATION, and organization should be the sha256 hash of the name of the legal entity with copyrights on YOUR APPLICATION.
 
-Once registered you can use this software without any upfront payment. However, by registering you are commit to paying for the license as soon as you decide to do it and within a period of 4 years. Remeber, if you register, you are commiting to pay for the license as long as you keep using this software in YOUR APPLICATION.
+Once registered you can use this software without any upfront payment. However, by registering you are commit to paying for the license as soon as you decide to do it and within a period of 4 years. Remember, if you register, you are commiting to pay for the license as long as you keep using this software in YOUR APPLICATION.
 
 The price, in DAI, for buying a license of this software can be calculated by calling the method `getPrice(bytes32 packageHash, bytes32 organizationHash)` of the smart contract. This price will change in time, starting at a minimum value on the date you registered the application and reaching a maximum value after 4 years.
 
